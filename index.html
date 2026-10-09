@@ -1,514 +1,1146 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="auto" data-lang="es">
 
 <head>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-QV4WPT4FWS"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-QV4WPT4FWS');
-  </script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-QV4WPT4FWS');</script>
 
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Juan Manuel Fernández Cuesta — Senior Frontend Developer con 14 años de experiencia en Angular, React, TypeScript y Liferay. Especializado en seguridad frontend, Core Web Vitals y accesibilidad WCAG.">
+  <meta name="theme-color" content="#0d1424" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f5f6f8">
 
-  <title>Juan Manuel Fernández - Diseñador/Frontend</title>
-  <meta content="Hola, me llamo Juan Manuel Fernández Cuesta y soy un Frontend de Asturias. Éste es mi portfolio donde os cuento un poco de mi vida y donde he subido algunos de los proyectos en los que he estado involucrado. Bienvenid@." name="description">
-  <meta content="Frontend, diseño, UX/UI, Asturias" name="keywords">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Juan Manuel Fernández Cuesta — Senior Frontend Developer">
+  <meta property="og:description" content="14 años construyendo interfaces web seguras, accesibles y de alto rendimiento. Angular · React · TypeScript · Liferay.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://juanmafdezcuesta.github.io/">
+  <meta property="og:image" content="https://juanmafdezcuesta.github.io/assets/img/profile-img.jpg">
 
-  <!-- Favicons -->
-  <link href="https://juanmafdezcuesta.github.io/assets/img/favicon.png" rel="icon">
-  <link href="https://juanmafdezcuesta.github.io/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <title>Juan Manuel Fernández Cuesta — Senior Frontend Developer</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
-  <!-- Vendor CSS -->
-  <link href="https://juanmafdezcuesta.github.io/assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="https://juanmafdezcuesta.github.io/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://juanmafdezcuesta.github.io/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://juanmafdezcuesta.github.io/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="https://juanmafdezcuesta.github.io/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="https://juanmafdezcuesta.github.io/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..700;1,14..32,300..500&display=swap" rel="stylesheet">
 
-  <!-- Main CSS -->
-  <link href="https://juanmafdezcuesta.github.io/assets/css/style.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <a class="skip-link" href="#main" data-i18n="skip.link">Saltar al contenido principal</a>
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
+  <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar a tema oscuro">
+    <svg class="theme-toggle__sun" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+      <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+    </svg>
+    <svg class="theme-toggle__moon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+    </svg>
+  </button>
 
-      <div class="profile">
-        <img src="https://juanmafdezcuesta.github.io/assets/img/profile-img.jpg" alt="Juan Manuel Fernández Cuesta" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Juan Manuel</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://twitter.com/juanmafcuesta" aria-label="twitter" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.instagram.com/juanmafdezcuesta/" aria-label="instagram" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="https://api.whatsapp.com/send?phone=628464515" aria-label="whatsapp" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
-          <a href="https://www.linkedin.com/in/juanmafcuesta/" aria-label="linkedin" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
-      </div>
+  <div class="layout">
 
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#inicio" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Inicio</span></a></li>
-          <li><a href="#sobremi" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Sobre mí</span></a></li>
-          <li><a href="#habilidades" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Habilidades técnicas</span></a></li>
-          <li><a href="#trayectoria" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Experiencia profesional</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-trophy"></i> <span>Portfolio</span></a></li>
-          <li><a href="#contacto" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contacto</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-    </div>
-  </header><!-- End Header -->
+    <header class="sidebar" id="sidebar" role="banner">
+      <div class="sidebar__inner">
 
-  <!-- ======= Inicio Section ======= -->
-  <section id="inicio" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="inicio-container" data-aos="fade-in">
-      <h1>Hola, soy Juanma 👋</h1>
-      <p>Soy <span class="typed" data-typed-items="Frontend, Diseñador, Freelance"></span></p>
-    </div>
-  </section><!-- End Inicio -->
+        <div class="profile">
+          <img
+            src="assets/img/profile-img.jpg"
+            alt="Juan Manuel Fernández Cuesta"
+            width="96" height="96"
+            loading="eager"
+            decoding="async"
+            class="profile__avatar"
+          >
+          <p class="profile__name">Juan Manuel Fern�ndez Cuesta</p>
+          <p class="profile__role">Senior Frontend Developer</p>
 
-  <main id="main">
-
-    <!-- ======= Sobre mi Section ======= -->
-    <section id="sobremi" class="sobremi">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Sobre mí</h2>
-          <p>Hola! me llamo Juan Manuel Fernández Cuesta y soy un Frontend/Diseñador de Asturias.</p><br>
-          <p>Desde aplicaciones y páginas web hasta plataformas internas o herramientas digitales profesionales, siempre intento seguir la metodología design thinking en mi proceso de diseño. Cada decisión que tomo en dicho proceso está dirigido a conseguir una buena experiencia de usuario acompañada de un diseño visual consistente, coherente y visualmente accesible.</p><br>
-          <p>Además, con el desarrollo de Frontend complementa y ayuda a aterrizar el diseño de una manera más práctica y real. Trabajo muy cómodo con HTML5, CSS3 y con librerías de Javascript como JQuery o TypeScript. Tengo conocimientos sobre buenas prácticas web para impactar positivamente tanto en el SEO como en la velocidad de carga y construyo los productos digitales que diseño para que se adapten de manera responsive a diferentes tamaños de pantalla donde van a ser mostrados.</p><br>
-          <p>El diseño de marca o la maquetación editorial han estado presentes en algunos de los proyectos en los que he creado. Especialmente antes de estar 100% enfocado en el diseño de interacción (UX) y en el diseño de interfaz de usuario (UI).</p><br>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="https://juanmafdezcuesta.github.io/assets/img/profile-img.jpg" class="img-fluid" alt="Juan Manuel Fernández Cuesta Frontend">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Frontend Developer &amp; Diseñador</h3>
-            <p class="font-italic">
-             Aquí algunos de mis datos más importantes
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Cumpleaños:</strong> <span>14 Feb 1990</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Web:</strong> <span>https://juanmafdezcuesta.github.io/</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Teléfono:</strong> <span>628 464 515</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-		  <li><i class="bi bi-chevron-right"></i> <strong>Años:</strong> <span id="addYears">31</span></li>
-		   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>juanmafdezcuesta@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Ciudad:</strong> <span>Avilés, Asturias</span></li>
-                </ul>
-		<script>
-		function calcularEdad(fecha) {
-		    var hoy = new Date();
-		    var cumpleanos = new Date(fecha);
-		    var edad = hoy.getFullYear() - cumpleanos.getFullYear();
-		    var m = hoy.getMonth() - cumpleanos.getMonth();
-
-		    if (m < 0 || (m === 0 && hoy.getDate() < cumpleanos.getDate())) {
-			edad--;
-		    }
-
-		    return edad;
-		}	
-		document.querySelector("#addYears").textContent = calcularEdad("1990/02/14");
-		</script>
-              </div>
-            </div>
-          </div>
+          <ul class="social" role="list" aria-label="Redes sociales" data-i18n-label="social.label">
+            <li>
+              <a href="https://www.linkedin.com/in/juanmafcuesta/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/juanmafcuesta" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://api.whatsapp.com/send?phone=628464515" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:juanmafdezcuesta@gmail.com" aria-label="Email">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+              </a>
+            </li>
+          </ul>
         </div>
 
-      </div>
-    </section><!-- End Sobre mi Section -->
+        <nav class="nav" id="nav" aria-label="Navegación principal" data-i18n-label="nav.main.label">
+          <ul role="list">
+            <li>
+              <a href="#inicio" class="nav__link" aria-current="page">
+                <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                <span data-i18n="nav.inicio">Inicio</span>
+              </a>
+            </li>
+            <li>
+              <a href="#sobremi" class="nav__link">
+                <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <span data-i18n="nav.sobremi">Sobre mí</span>
+              </a>
+            </li>
+            <li>
+              <a href="#habilidades" class="nav__link">
+                <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                <span data-i18n="nav.habilidades">Habilidades</span>
+              </a>
+            </li>
+            <li>
+              <a href="#experiencia" class="nav__link">
+                <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                <span data-i18n="nav.experiencia">Experiencia</span>
+              </a>
+            </li>
+            <li>
+              <a href="#portfolio" class="nav__link">
+                <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                <span data-i18n="nav.portfolio">Portfolio</span>
+              </a>
+            </li>
+            <li>
+              <a href="#contacto" class="nav__link">
+                <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+                <span data-i18n="nav.contacto">Contacto</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-    <!-- ======= Habilidades Section ======= -->
-    <section id="habilidades" class="habilidades section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Habilidades técnicas</h2>
-          <p>Este apartado es un resumen de mis conocimientos</p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">HTML / CSS <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Bootstrap <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            
-            <div class="progress">
-              <span class="skill">SASS <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-		  
-	    <div class="progress">
-              <span class="skill">Liferay / Angular / React<i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Adobe <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Gitlab <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
+        <div class="lang-switch" role="group" aria-label="Idioma / Language">
+          <button class="lang-btn lang-btn--active" data-lang-target="es" type="button" aria-pressed="true">ES</button>
+          <button class="lang-btn" data-lang-target="en" type="button" aria-pressed="false">EN</button>
         </div>
 
       </div>
-    </section><!-- End Habilidades Section -->
+    </header><!-- /sidebar -->
 
-    <!-- ======= Trayectoria Section ======= -->
-    <section id="trayectoria" class="trayectoria">
-      <div class="container">
+    <button
+      class="mobile-nav-toggle"
+      id="mobileNavToggle"
+      type="button"
+      aria-label="Abrir menú de navegación"
+      aria-expanded="false"
+      aria-controls="sidebar"
+    >
+      <span class="hamburger" aria-hidden="true"></span>
+    </button>
 
-        <div class="section-title">
-          <h2>Experiencia profesional</h2>
-          <p>Por aquí os dejo tanto la formación como las empresas para las que he trabajado</p>
-        </div>
+    <main id="main" class="content">
 
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="trayectoria-title">Educación</h3>
-            <div class="trayectoria-item">
-              <h4>Técnico Superior en Desarrollo de Aplicaciones Web</h4>
-              <h5>2016</h5>
-              <p><em>CIFP Avilés (Asturias)</em></p>
-              <p>Desarrollar, implantar, y mantener aplicaciones web, con independencia del modelo empleado y utilizando tecnologías específicas, garantizando el acceso a los datos de forma segura y cumpliendo los criterios de accesibilidad, usabilidad y calidad exigidas en los estándares establecidos.</p>
-            </div>
-            <div class="trayectoria-item">
-              <h4>Técnico Superior en Desarrollo de Aplicaciones Informáticas</h4>
-              <h5>2011</h5>
-              <p><em>IES Juan José Calvo Miguel Sotrondio (Asturias)</em></p>
-              <p>Programación en lenguajes estructurados, desarrollo de aplicaciones en entornos de cuarta generación y con herramientas CASE, diseño y realización de servicios de presentación en entornos gráficos, etc..</p>
-            </div>
-            <h3 class="trayectoria-title">Cursos</h3>
-            <div class="trayectoria-item">
-              <h4>Curso Avanzado Angular</h4>
-              <h5>2020</h5>
-              <p><em>21h (02630122A)</em></p>
-            </div>
-            <div class="trayectoria-item">
-              <h4>Curso Básico Angular</h4>
-              <h5>2020</h5>
-              <p><em>21h (02630122A)</em></p>
-            </div>
+      <!-- ── INICIO ── -->
+      <section id="inicio" class="hero" aria-labelledby="hero-heading">
+        <div class="hero__inner">
+          <p class="hero__eyebrow" data-i18n="hero.eyebrow">Senior Frontend Developer · 14 años de experiencia</p>
+          <h1 id="hero-heading" class="hero__heading" data-i18n-html="hero.heading">
+            Hola, soy<br>
+            <span class="hero__name">Juanma</span>
+          </h1>
+          <p class="hero__tagline" data-i18n-html="hero.tagline">
+            Construyo interfaces web <strong>seguras</strong>, <strong>accesibles</strong> y de <strong>alto rendimiento</strong>. Especializado en Angular, React, TypeScript y Liferay — con foco en AI-Driven Development.
+          </p>
+          <div class="hero__actions">
+            <a href="#experiencia" class="btn btn--primary" data-i18n="hero.cta.exp">Ver experiencia</a>
+            <a href="https://www.linkedin.com/in/juanmafcuesta/" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">
+              <span data-i18n="hero.cta.linkedin">LinkedIn</span>
+              <svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
           </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="trayectoria-title">Experiencia profesional</h3>
-             <div class="trayectoria-item">
-              <h4>Frontend Developer</h4>
-              <h5>2022 - Actual</h5>
-              <p><em>IZERTIS, Gijón, Asturias </em></p>
-              <ul>
-                <li>Realizar tareas de análisis y desarrollo de aplicaciones web así como su mantenimiento para importantes clientes.</li>
-                <li>Desarrollo e implementación de artefactos codificados provenientes de las fases previas de diseño.</li>
-              </ul>
+          <ul class="hero__tags" role="list" aria-label="Áreas de especialización" data-i18n-label="hero.tags.label">
+            <li><span class="tag tag--accent" data-i18n="hero.tag.security">Frontend Security</span></li>
+            <li><span class="tag tag--accent" data-i18n="hero.tag.cwv">Core Web Vitals</span></li>
+            <li><span class="tag tag--accent" data-i18n="hero.tag.wcag">WCAG 2.2</span></li>
+            <li><span class="tag tag--accent" data-i18n="hero.tag.ai">AI-Driven Dev</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ── SOBRE MÍ ── -->
+      <section id="sobremi" class="section" aria-labelledby="sobremi-heading">
+        <div class="section__inner">
+          <header class="section__header">
+            <h2 id="sobremi-heading" class="section__title" data-i18n="about.title">Sobre mí</h2>
+          </header>
+
+          <div class="about">
+            <div class="about__bio">
+              <p data-i18n-html="about.bio.1">Desarrollador Frontend con 14 años de experiencia construyendo interfaces web <strong>seguras, de alto rendimiento y accesibles</strong>. Especializado en arquitecturas con Angular, React, TypeScript y Liferay Headless.</p>
+              <p data-i18n-html="about.bio.2">Apasionado por la intersección entre Developer Experience y seguridad desde el primer render: minificación, ofuscación, hardening. Impulso la eficiencia del ciclo de vida del software con <strong>AI-Driven Development</strong> (Claude Code, GitHub Copilot) para acelerar auditorías, detectar riesgos y refactorizar lógica compleja.</p>
             </div>
-            <div class="trayectoria-item">
-              <h4>Frontend Developer</h4>
-              <h5>2021 - 2022</h5>
-              <p><em>Ricoh España, Posada de Llanera, Asturias </em></p>
-              <ul>
-                <li>Realizar tareas de análisis y desarrollo de aplicaciones web así como su mantenimiento para importantes clientes.</li>
-                <li>Desarrollo e implementación de artefactos codificados provenientes de las fases previas de diseño.</li>
-				<li>Pasar al nuevo marco de trabajo las aplicaicones del Gobierno del Principado de Asturias</li>
-				<li>Tecnologías: UX, Angular y Angular Material</li>
-              </ul>
-            </div>
-            <div class="trayectoria-item">
-              <h4>Frontend Developer</h4>
-              <h5>2019 - 2021</h5>
-              <p><em>Treelogic, Posada de Llanera, Asturias </em></p>
-              <ul>
-                <li>Realizar tareas de análisis y desarrollo de aplicaciones web así como su mantenimiento para importantes clientes.</li>
-                <li>Desarrollo e implementación de artefactos codificados provenientes de las fases previas de diseño.</li>
-				<li>Tecnologías: Angular y Angular Material</li>
-              </ul>
-            </div>
-            <div class="trayectoria-item">
-              <h4>Frontend Developer</h4>
-              <h5>2016 - 2019</h5>
-              <p><em>Intermark IT, Gijón, Asturias</em></p>
-              <ul>
-                <li>Recogida de requisitos con el cliente, creación de interfaces de usuario y prototipos de aplicaciones web. Pasando por la maquetación, usabilidad y accesibilidad de la web con las últimas tecnologías.</li>
-                <li>Coordinación de tareas entre los diferentes departamentos involucrados.</li>
-                <li>Manuales de usuario y verificación del cumplimiento de requisitos en el producto final.</li>
-				<li>Tecnologías: Liferay, Angular y Bootstrap.</li>
-              </ul>
-            </div>
-            <div class="trayectoria-item">
-              <h4>Frontend Developer</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Treelogic, Posada de Llanera, Asturias </em></p>
-              <ul>
-                <li>Frontend Liferay 6.2. Análisis y desarrollo.</li>
-                <li>Formación a trabajadores con metodología Bootstrap</li>
-                <li>Análisis , diseño y desarrollo del aplicativo StocKeyCentral para la gestión y ejecución de pedidos en armarios KARDEX en el ámbito hospitalario.</li>
-				<li>Tecnologías: Liferay y Bootstrap.</li>
-			  </ul>
-            </div>
-            <div class="trayectoria-item">
-              <h4>Frontend Developer</h4>
-              <h5>2014 - 2015</h5>
-              <p><em>GMV, Barcelona, Cataluña </em></p>
-              <ul>
-                <li>Analista/Programador en proyectos J2EE, soluciones de portales e intranets.</li>
-                <li>Desarrollo e implantación de un portal web con un buscador de toda la información de los Grados, CFGS y CFGM de Cataluña con herramientas para ayudar y facilitar a los estudiantes la elección (Top Ten, Glosario, integración con GoogleMaps ...)</li>
-                <li>Diseño y desarrollo web del portal e intranet de la Universidad de Barcelona.</li>
-              </ul>
-            </div>
+            <dl class="about__data">
+              <div class="about__data-row">
+                <dt data-i18n="about.loc.label">Ubicación</dt>
+                <dd>Navia, Asturias</dd>
+              </div>
+              <div class="about__data-row">
+                <dt data-i18n="about.email.label">Email</dt>
+                <dd><a href="mailto:juanmafdezcuesta@gmail.com">juanmafdezcuesta@gmail.com</a></dd>
+              </div>
+              <div class="about__data-row">
+                <dt data-i18n="about.phone.label">Teléfono</dt>
+                <dd><a href="tel:+34628464515">628 464 515</a></dd>
+              </div>
+              <div class="about__data-row">
+                <dt data-i18n="about.lang.label">Idiomas</dt>
+                <dd data-i18n="about.lang.value">Español · Inglés (Full Professional) · Gallego</dd>
+              </div>
+            </dl>
           </div>
-        </div>
 
-      </div>
-    </section><!-- End Trayectoria Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="proyectos section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Una selección de las empresas para las que he estado involucrado</p>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="proyectos-flters">
-              <li data-filter="*" class="filter-active">Todos</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-web">Web</li>
+          <div class="certs">
+            <h3 class="certs__heading" data-i18n="about.certs.title">Certificaciones</h3>
+            <ul class="certs__list" role="list">
+              <li class="cert">
+                <span class="cert__icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+                </span>
+                <span class="cert__name">Claude Code in Action</span>
+              </li>
+              <li class="cert">
+                <span class="cert__icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </span>
+                <span class="cert__name">Introduction to Model Context Protocol</span>
+              </li>
+              <li class="cert">
+                <span class="cert__icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                </span>
+                <span class="cert__name">AI Fluency Framework &amp; Foundations</span>
+              </li>
+              <li class="cert">
+                <span class="cert__icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                </span>
+                <span class="cert__name">Mastering Backend Liferay Client Extensions</span>
+              </li>
+              <li class="cert">
+                <span class="cert__icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                </span>
+                <span class="cert__name">Foundations of Liferay Headless APIs</span>
+              </li>
             </ul>
           </div>
-        </div>
-
-        <div class="row proyectos-container" data-aos="fade-up" data-aos-delay="100">
-		
-		  <div class="col-lg-4 col-md-6 proyectos-item filter-web">
-            <div class="proyectos-wrap">
-              <img src="https://juanmafdezcuesta.github.io/assets/img/portfolio/portfolio-12.jpg" class="img-fluid" alt="Frontend Pasaporte Covid Asturias">
-              <div class="proyectos-links">
-                <a href="https://apps1.sespa.es/cverdecovidciudadano/#/" title="Más detalles"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 proyectos-item filter-web">
-            <div class="proyectos-wrap">
-              <img src="https://juanmafdezcuesta.github.io/assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="Frontend EDP Mis Consumos">
-              <div class="proyectos-links">
-                <a target="_blank" href="https://misconsumos.eredesdistribucion.es/#/" title="Más detalles"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-		  
-		  <div class="col-lg-4 col-md-6 proyectos-item filter-web">
-            <div class="proyectos-wrap">
-              <img src="https://juanmafdezcuesta.github.io/assets/img/portfolio/portfolio-13.jpg" class="img-fluid" alt="Frontend Area Clientes Telecable">
-              <div class="proyectos-links">
-                <a target="_blank" href="https://web.telecable.es/web/area-clientes" title="Más detalles"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 proyectos-item filter-app">
-            <div class="proyectos-wrap">
-              <img src="https://juanmafdezcuesta.github.io/assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="Frontend Cofas">
-              <div class="proyectos-links">
-                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.it.cofas.appsocios" title="Más detalles"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 proyectos-item filter-web">
-            <div class="proyectos-wrap">
-              <img src="https://juanmafdezcuesta.github.io/assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="Frontend Alimerka">
-              <div class="proyectos-links">
-                <a target="_blank" href="https://clientes.alimerka.es/" title="Más detalles"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 proyectos-item filter-app">
-            <div class="proyectos-wrap">
-              <img src="https://juanmafdezcuesta.github.io/assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="Frontend Weguest">
-              <div class="proyectos-links">
-               <a target="_blank" href="https://play.google.com/store/apps/details?id=com.it.weguest.weguestapp" title="Más detalles"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 proyectos-item filter-web">
-            <div class="proyectos-wrap">
-              <img src="https://juanmafdezcuesta.github.io/assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="Frontend Grupo Elementia">
-              <div class="proyectos-links">
-               <a target="_blank" href="https://www.elementia.com/inicio" title="Más detalles"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 proyectos-item filter-web">
-            <div class="proyectos-wrap">
-              <img src="https://juanmafdezcuesta.github.io/assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="Frontend DAISA">
-              <div class="proyectos-links">
-                 <a target="_blank" href="https://www.d4-0.com/" title="Más detalles"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 proyectos-item filter-app">
-            <div class="proyectos-wrap">
-              <img src="https://juanmafdezcuesta.github.io/assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="Frontend Caja de Ingenieros">
-              <div class="proyectos-links">
-                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.cajaingenieros.android.bancamovil" title="Más detalles"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 proyectos-item filter-web">
-            <div class="proyectos-wrap">
-              <img src="https://juanmafdezcuesta.github.io/assets/img/portfolio/portfolio-10.jpg" class="img-fluid" alt="Frontend Arcelor">
-              <div class="proyectos-links">
-               <a target="_blank" href="https://b2e-spain.arcelormittal.com/asturias/portal-empleado/B2EWeb/srv/B2EXM600" title="Más detalles"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-		
-	  <div class="col-lg-4 col-md-6 proyectos-item filter-web">
-            <div class="proyectos-wrap">
-              <img src="https://juanmafdezcuesta.github.io/assets/img/portfolio/portfolio-11.jpg" class="img-fluid" alt="Frontend AXA">
-              <div class="proyectos-links">
-               <a target="_blank" href="https://www.axa-assistance-segurodeviaje.es/" title="Más detalles"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
 
         </div>
+      </section>
 
-      </div>
-    </section><!-- End Proyectos Section -->
+      <!-- ── HABILIDADES ── -->
+      <section id="habilidades" class="section section--alt" aria-labelledby="habilidades-heading">
+        <div class="section__inner">
+          <header class="section__header">
+            <h2 id="habilidades-heading" class="section__title" data-i18n="skills.title">Habilidades técnicas</h2>
+            <p class="section__subtitle" data-i18n="skills.subtitle">Stack actual y áreas de especialización — sin barras de progreso arbitrarias</p>
+          </header>
 
-    <!-- ======= Contacto Section ======= -->
-    <section id="contacto" class="contacto section-bg">
-      <div class="container">
+          <div class="skills">
 
-        <div class="section-title">
-          <h2>Contacto</h2>
-          <p>Contacta conmigo aquí <a href="mailto:juanmafdezcuesta@gmail.com">juanmafdezcuesta@gmail.com</a> y déjame unas palabras 😃</p>
-        </div>
+            <div class="skill-group">
+              <h3 class="skill-group__title" data-i18n="sg.core">Core</h3>
+              <ul class="skill-group__tags" role="list">
+                <li><span class="tag" data-i18n="tag.html5">HTML5 semántico</span></li>
+                <li><span class="tag" data-i18n="tag.css-modern">CSS moderno</span></li>
+                <li><span class="tag">TypeScript</span></li>
+                <li><span class="tag">JavaScript ES2024+</span></li>
+              </ul>
+            </div>
 
-        <div class="row" data-aos="fade-in">
+            <div class="skill-group">
+              <h3 class="skill-group__title" data-i18n="sg.frameworks">Frameworks &amp; Plataformas</h3>
+              <ul class="skill-group__tags" role="list">
+                <li><span class="tag tag--primary">Angular</span></li>
+                <li><span class="tag tag--primary">React</span></li>
+                <li><span class="tag tag--primary">Liferay DXP / Headless</span></li>
+                <li><span class="tag tag--primary">Shopify</span></li>
+              </ul>
+            </div>
 
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Localización:</h4>
-                <p>Avilés, Asturias</p>
-              </div>
+            <div class="skill-group">
+              <h3 class="skill-group__title" data-i18n="sg.css">CSS Architecture</h3>
+              <ul class="skill-group__tags" role="list">
+                <li><span class="tag">Design Tokens</span></li>
+                <li><span class="tag">CSS Custom Properties</span></li>
+                <li><span class="tag">SCSS / BEM</span></li>
+                <li><span class="tag">Container Queries</span></li>
+                <li><span class="tag" data-i18n="tag.css-nesting">CSS Nesting nativo</span></li>
+                <li><span class="tag" data-i18n="tag.fluid-type">Tipografía fluida</span></li>
+              </ul>
+            </div>
 
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>juanmafdezcuesta@gmail.com</p>
-              </div>
+            <div class="skill-group">
+              <h3 class="skill-group__title" data-i18n="sg.quality">Calidad &amp; Rendimiento</h3>
+              <ul class="skill-group__tags" role="list">
+                <li><span class="tag tag--quality">WCAG 2.2 AA</span></li>
+                <li><span class="tag tag--quality">Core Web Vitals</span></li>
+                <li><span class="tag tag--quality">Frontend Security</span></li>
+                <li><span class="tag tag--quality">Storybook</span></li>
+                <li><span class="tag tag--quality">a11y Auditing</span></li>
+              </ul>
+            </div>
 
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Teléfono:</h4>
-                <p>628 464 515</p>
-              </div>
+            <div class="skill-group">
+              <h3 class="skill-group__title" data-i18n="sg.ai">AI &amp; Developer Experience</h3>
+              <ul class="skill-group__tags" role="list">
+                <li><span class="tag tag--ai">Claude Code</span></li>
+                <li><span class="tag tag--ai">GitHub Copilot</span></li>
+                <li><span class="tag tag--ai">MCP / AI Tooling</span></li>
+                <li><span class="tag tag--ai">AI-Driven Development</span></li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group__title" data-i18n="sg.tooling">Tooling</h3>
+              <ul class="skill-group__tags" role="list">
+                <li><span class="tag">Git / GitLab</span></li>
+                <li><span class="tag">GSAP / Animaciones</span></li>
+                <li><span class="tag">Gulp</span></li>
+                <li><span class="tag">Adobe Suite</span></li>
+                <li><span class="tag">Figma</span></li>
+              </ul>
             </div>
 
           </div>
+        </div>
+      </section>
 
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <div class="info">
-              <iframe title="Localización" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46261.734420234934!2d-5.9530398190403035!3d43.557414505778794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd369b638b853ca1%3A0x2f8943a218606643!2sAvil%C3%A9s%2C%20Asturias!5e0!3m2!1ses!2ses!4v1614111798103!5m2!1ses!2ses" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-            </div>
+      <!-- ── EXPERIENCIA ── -->
+      <section id="experiencia" class="section" aria-labelledby="experiencia-heading">
+        <div class="section__inner">
+          <header class="section__header">
+            <h2 id="experiencia-heading" class="section__title" data-i18n="exp.title">Experiencia profesional</h2>
+          </header>
+
+          <ol class="timeline" role="list">
+
+            <li class="timeline__item timeline__item--current">
+              <article class="job">
+                <header class="job__header">
+                  <div class="job__top">
+                    <span class="job__company">hiberus</span>
+                    <span class="job__badge" data-i18n="exp.badge.current">Actual</span>
+                  </div>
+                  <h3 class="job__title">Senior Frontend Developer</h3>
+                  <p class="job__period" data-i18n-html="job.hiberus.period"><time datetime="2025-11">Nov 2025</time> – Presente · <span class="job__location">Provincia de Asturias</span></p>
+                </header>
+                <ul class="job__highlights">
+                  <li data-i18n-html="job.hiberus.h1">Optimización del ciclo de vida del software con <strong>Claude Code</strong> y GitHub Copilot para lógica compleja y refactorización estratégica.</li>
+                  <li data-i18n-html="job.hiberus.h2">Soluciones desacopladas con <strong>Liferay Headless APIs</strong> y arquitecturas modernas de Client Extensions.</li>
+                </ul>
+                <details class="job__details">
+                  <summary data-i18n="exp.more">Más responsabilidades</summary>
+                  <ul>
+                    <li data-i18n="job.hiberus.d1">Diseño y despliegue de Fragments dinámicos y Liferay Objects para maximizar la flexibilidad y escalabilidad de plataformas corporativas.</li>
+                    <li data-i18n="job.hiberus.d2">AI-Driven Development: integración de herramientas de IA en el flujo de desarrollo para acelerar auditorías y detección de riesgos.</li>
+                  </ul>
+                </details>
+              </article>
+            </li>
+
+            <li class="timeline__item">
+              <article class="job">
+                <header class="job__header">
+                  <div class="job__top">
+                    <span class="job__company">IZERTIS</span>
+                  </div>
+                  <h3 class="job__title">Frontend Developer</h3>
+                  <p class="job__period" data-i18n-html="job.izertis.period"><time datetime="2022-01">Ene 2022</time> – <time datetime="2025-11">Nov 2025</time> · 3 años 11 meses · <span class="job__location">Gijón, Asturias</span></p>
+                </header>
+                <ul class="job__highlights">
+                  <li data-i18n="job.izertis.h1">Liderazgo técnico en evaluación de tareas críticas, asegurando calidad y alineación con objetivos del cliente.</li>
+                  <li data-i18n-html="job.izertis.h2">Creación y mantenimiento de librerías de componentes con <strong>Storybook</strong>, BEM y SCSS.</li>
+                </ul>
+                <details class="job__details">
+                  <summary data-i18n="exp.more">Más responsabilidades</summary>
+                  <ul>
+                    <li data-i18n="job.izertis.d1">Construcción de Client Extensions en Angular y React para optimizar la comunicación con servicios backend.</li>
+                    <li data-i18n="job.izertis.d2">Integración de librerías: GSAP, Swiper, OwlCarousel, Leaflet, DataTables.</li>
+                    <li data-i18n="job.izertis.d3">Clientes destacados: Telecable, EDP Redes, Gobierno de Asturias.</li>
+                  </ul>
+                </details>
+              </article>
+            </li>
+
+            <li class="timeline__item">
+              <article class="job">
+                <header class="job__header">
+                  <div class="job__top">
+                    <span class="job__company">Ricoh España</span>
+                  </div>
+                  <h3 class="job__title">Frontend Developer</h3>
+                  <p class="job__period" data-i18n-html="job.ricoh.period"><time datetime="2021-05">May 2021</time> – <time datetime="2022-01">Ene 2022</time> · 9 meses · <span class="job__location">Oviedo, Asturias</span></p>
+                </header>
+                <ul class="job__highlights">
+                  <li data-i18n-html="job.ricoh.h1">Soluciones web para el <strong>Gobierno del Principado de Asturias</strong> siguiendo estándares institucionales de robustez.</li>
+                  <li data-i18n="job.ricoh.h2">Liderazgo en accesibilidad: normativas WCAG integradas desde la fase de diseño.</li>
+                </ul>
+                <details class="job__details">
+                  <summary data-i18n="exp.more">Más responsabilidades</summary>
+                  <ul>
+                    <li data-i18n="job.ricoh.d1">Migración de aplicaciones al nuevo framework Angular + Angular Material.</li>
+                    <li data-i18n="job.ricoh.d2">Implementación de patrones de diseño y arquitecturas de componentes reutilizables.</li>
+                    <li data-i18n="job.ricoh.d3">Consultoría técnica directa con el cliente para la validación de requisitos.</li>
+                  </ul>
+                </details>
+              </article>
+            </li>
+
+            <li class="timeline__item">
+              <article class="job">
+                <header class="job__header">
+                  <div class="job__top">
+                    <span class="job__company">Treelogic</span>
+                  </div>
+                  <h3 class="job__title">Frontend Developer</h3>
+                  <p class="job__period" data-i18n-html="job.treelogic2.period"><time datetime="2019-04">Abr 2019</time> – <time datetime="2021-04">Abr 2021</time> · 2 años · <span class="job__location">Oviedo, Asturias</span></p>
+                </header>
+                <ul class="job__highlights">
+                  <li data-i18n-html="job.treelogic2.h1">Implementación y mantenimiento de la solución <strong>Bizum</strong> para Caja de Ingenieros (fintech de alta fiabilidad).</li>
+                </ul>
+                <details class="job__details">
+                  <summary data-i18n="exp.more">Más responsabilidades</summary>
+                  <ul>
+                    <li data-i18n="job.treelogic2.d1">Gestión directa con stakeholders para análisis de requerimientos y nuevas funcionalidades.</li>
+                    <li data-i18n="job.treelogic2.d2">Transformación de activos de diseño en artefactos codificados con fidelidad visual.</li>
+                    <li data-i18n="job.treelogic2.d3">Tecnologías: Angular, Angular Material.</li>
+                  </ul>
+                </details>
+              </article>
+            </li>
+
+            <li class="timeline__item">
+              <article class="job">
+                <header class="job__header">
+                  <div class="job__top">
+                    <span class="job__company">Intermark IT</span>
+                  </div>
+                  <h3 class="job__title">Frontend Developer</h3>
+                  <p class="job__period" data-i18n-html="job.intermark.period"><time datetime="2016-07">Jul 2016</time> – <time datetime="2019-04">Abr 2019</time> · 2 años 10 meses · <span class="job__location">Gijón, Asturias</span></p>
+                </header>
+                <details class="job__details">
+                  <summary data-i18n="exp.view">Ver responsabilidades</summary>
+                  <ul>
+                    <li data-i18n="job.intermark.d1">Liderazgo en recogida de requisitos y creación de prototipos interactivos.</li>
+                    <li data-i18n="job.intermark.d2">Nexo técnico entre departamentos para garantizar la alineación de equipos.</li>
+                    <li data-i18n="job.intermark.d3">QA y elaboración de manuales de usuario detallados.</li>
+                    <li data-i18n="job.intermark.d4">Tecnologías: Liferay, Angular, Bootstrap.</li>
+                  </ul>
+                </details>
+              </article>
+            </li>
+
+            <li class="timeline__item">
+              <article class="job">
+                <header class="job__header">
+                  <div class="job__top">
+                    <span class="job__company">Treelogic</span>
+                  </div>
+                  <h3 class="job__title">Frontend Developer</h3>
+                  <p class="job__period" data-i18n-html="job.treelogic1.period"><time datetime="2015-05">May 2015</time> – <time datetime="2016-06">Jun 2016</time> · 1 año 2 meses · <span class="job__location">Oviedo, Asturias</span></p>
+                </header>
+                <details class="job__details">
+                  <summary data-i18n="exp.view">Ver responsabilidades</summary>
+                  <ul>
+                    <li data-i18n="job.treelogic1.d1">Desarrollo Frontend Liferay 6.2 con Velocity y Freemarker.</li>
+                    <li data-i18n="job.treelogic1.d2">Formación técnica interna: CSS avanzado, animaciones, 3D, Bootstrap.</li>
+                    <li data-i18n="job.treelogic1.d3">StocKeyCentral para Grifols: gestión de pedidos KARDEX con JavaFX y J2EE en entorno hospitalario.</li>
+                    <li data-i18n="job.treelogic1.d4">Automatización de flujos con Gulp.</li>
+                  </ul>
+                </details>
+              </article>
+            </li>
+
+            <li class="timeline__item">
+              <article class="job">
+                <header class="job__header">
+                  <div class="job__top">
+                    <span class="job__company">GMV</span>
+                  </div>
+                  <h3 class="job__title">Web Developer</h3>
+                  <p class="job__period" data-i18n-html="job.gmv.period"><time datetime="2014-08">Ago 2014</time> – <time datetime="2015-05">May 2015</time> · 10 meses · <span class="job__location">Barcelona</span></p>
+                </header>
+                <details class="job__details">
+                  <summary data-i18n="exp.view">Ver responsabilidades</summary>
+                  <ul>
+                    <li data-i18n-html="job.gmv.d1">Portal e intranet de la <strong>Universidad de Barcelona</strong> con Liferay y Bootstrap.</li>
+                    <li data-i18n="job.gmv.d2">unportal.cat: buscador de oferta educativa en Cataluña (Top Ten, Glosario, Google Maps, Lucene).</li>
+                    <li data-i18n="job.gmv.d3">Proyectos J2EE con Oracle, MySQL y Vaadin; infraestructura en VMWare ESXi.</li>
+                  </ul>
+                </details>
+              </article>
+            </li>
+
+          </ol>
+
+          <div class="education">
+            <h3 class="education__title" data-i18n="edu.title">Formación académica</h3>
+            <ul class="education__list" role="list">
+              <li class="education__item">
+                <div class="education__degree" data-i18n="edu.daw.degree">Técnico Superior — Desarrollo de Aplicaciones Web</div>
+                <div class="education__meta">CIFP Avilés, Asturias · <time datetime="2016">2016</time></div>
+              </li>
+              <li class="education__item">
+                <div class="education__degree" data-i18n="edu.dai.degree">Técnico Superior — Desarrollo de Aplicaciones Informáticas</div>
+                <div class="education__meta">IES Juan José Calvo Miguel, Asturias · <time datetime="2011">2011</time></div>
+              </li>
+            </ul>
           </div>
 
         </div>
+      </section>
 
-      </div>
-    </section><!-- End Contacto Section -->
+      <!-- ── PORTFOLIO ── -->
+      <section id="portfolio" class="section section--alt" aria-labelledby="portfolio-heading">
+        <div class="section__inner">
+          <header class="section__header">
+            <h2 id="portfolio-heading" class="section__title" data-i18n="portfolio.title">Portfolio</h2>
+            <p class="section__subtitle" data-i18n="portfolio.subtitle">Proyectos destacados</p>
+          </header>
 
-  </main><!-- End #main -->
+          <div class="portfolio-wrap">
+            <fieldset class="portfolio-filter">
+              <legend class="sr-only" data-i18n="pf.legend">Filtrar proyectos por tipo</legend>
+              <label class="portfolio-filter__opt">
+                <input type="radio" name="pf" value="all" checked>
+                <span data-i18n="pf.all">Todos</span>
+              </label>
+              <label class="portfolio-filter__opt">
+                <input type="radio" name="pf" value="web">
+                <span data-i18n="pf.web">Web</span>
+              </label>
+              <label class="portfolio-filter__opt">
+                <input type="radio" name="pf" value="app">
+                <span data-i18n="pf.app">App</span>
+              </label>
+            </fieldset>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span><script async>document.write(new Date().getFullYear())</script></span></strong>
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
+            <ul class="portfolio-grid" role="list">
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+              <li class="portfolio-item" data-type="web">
+                <a href="https://www.roca.es/" target="_blank" rel="noopener noreferrer" class="portfolio-card portfolio-card--brand">
+                  <img src="https://www.roca.es/documents/20126/346080475/roca-logo.svg/4dc29d13-1df3-b628-786b-7c63db57cdcd?t=1753429104544" alt="Grupo Roca" loading="lazy" decoding="async" width="400" height="300">
+                  <div class="portfolio-card__info">
+                    <p class="portfolio-card__title" data-i18n="card.roca.title">Ecosistema Digital Multimarca Global</p>
+                    <p class="portfolio-card__type" data-i18n="card.roca.type">Web · Grupo Roca</p>
+                  </div>
+                </a>
+              </li>
 
-  <!-- Vendor JS Files -->
-  <script src="https://juanmafdezcuesta.github.io/assets/vendor/aos/aos.js"></script>
-  <script src="https://juanmafdezcuesta.github.io/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="https://juanmafdezcuesta.github.io/assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="https://juanmafdezcuesta.github.io/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="https://juanmafdezcuesta.github.io/assets/vendor/purecounter/purecounter.js"></script>
-  <script src="https://juanmafdezcuesta.github.io/assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="https://juanmafdezcuesta.github.io/assets/vendor/typed.js/typed.min.js"></script>
-  <script src="https://juanmafdezcuesta.github.io/assets/vendor/waypoints/noframework.waypoints.js"></script>
+              <li class="portfolio-item" data-type="web">
+                <a href="https://www.izertis.com/" target="_blank" rel="noopener noreferrer" class="portfolio-card portfolio-card--brand">
+                  <img src="https://www.izertis.com/documents/d/asset-library-35912/izertis-logo-red" alt="IZERTIS" loading="lazy" decoding="async" width="400" height="300">
+                  <div class="portfolio-card__info">
+                    <p class="portfolio-card__title" data-i18n="card.izertis.title">IZERTIS</p>
+                    <p class="portfolio-card__type" data-i18n="card.izertis.type">Web · Portal corporativo</p>
+                  </div>
+                </a>
+              </li>
 
-  <!-- Main JS File -->
-  <script src="https://juanmafdezcuesta.github.io/assets/js/main.js"></script>
+              <li class="portfolio-item" data-type="web">
+                <a href="https://www.samoaindustrial.com/" target="_blank" rel="noopener noreferrer" class="portfolio-card portfolio-card--brand">
+                  <img src="https://www.samoaindustrial.com/documents/d/global/logo-header-color-svg" alt="Samoa Industrial" loading="lazy" decoding="async" width="400" height="300">
+                  <div class="portfolio-card__info">
+                    <p class="portfolio-card__title" data-i18n="card.samoa.title">Samoa Industrial</p>
+                    <p class="portfolio-card__type" data-i18n="card.samoa.type">Web · E-commerce industrial</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="portfolio-item" data-type="web">
+                <a href="https://apps1.sespa.es/cverdecovidciudadano/#/" target="_blank" rel="noopener noreferrer" class="portfolio-card">
+                  <img src="assets/img/portfolio/portfolio-12.jpg" alt="Pasaporte COVID Asturias" loading="lazy" decoding="async" width="400" height="300">
+                  <div class="portfolio-card__info">
+                    <p class="portfolio-card__title" data-i18n="card.covid.title">Pasaporte COVID Asturias</p>
+                    <p class="portfolio-card__type" data-i18n="card.covid.type">Web · Gobierno de Asturias</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="portfolio-item" data-type="web">
+                <a href="https://misconsumos.eredesdistribucion.es/#/" target="_blank" rel="noopener noreferrer" class="portfolio-card">
+                  <img src="assets/img/portfolio/portfolio-5.jpg" alt="EDP Mis Consumos" loading="lazy" decoding="async" width="400" height="300">
+                  <div class="portfolio-card__info">
+                    <p class="portfolio-card__title" data-i18n="card.edp.title">EDP Mis Consumos</p>
+                    <p class="portfolio-card__type" data-i18n="card.edp.type">Web · EDP Redes</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="portfolio-item" data-type="web">
+                <a href="https://web.telecable.es/web/area-clientes" target="_blank" rel="noopener noreferrer" class="portfolio-card">
+                  <img src="assets/img/portfolio/portfolio-13.jpg" alt="Área Clientes Telecable" loading="lazy" decoding="async" width="400" height="300">
+                  <div class="portfolio-card__info">
+                    <p class="portfolio-card__title" data-i18n="card.telecable.title">Área Clientes Telecable</p>
+                    <p class="portfolio-card__type" data-i18n="card.telecable.type">Web · Telecable</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="portfolio-item" data-type="app">
+                <a href="https://play.google.com/store/apps/details?id=com.it.cofas.appsocios" target="_blank" rel="noopener noreferrer" class="portfolio-card">
+                  <img src="assets/img/portfolio/portfolio-1.jpg" alt="App Cofas" loading="lazy" decoding="async" width="400" height="300">
+                  <div class="portfolio-card__info">
+                    <p class="portfolio-card__title">App Cofas</p>
+                    <p class="portfolio-card__type" data-i18n="card.cofas.type">App · Android</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="portfolio-item" data-type="web">
+                <a href="https://clientes.alimerka.es/" target="_blank" rel="noopener noreferrer" class="portfolio-card">
+                  <img src="assets/img/portfolio/portfolio-2.jpg" alt="Alimerka" loading="lazy" decoding="async" width="400" height="300">
+                  <div class="portfolio-card__info">
+                    <p class="portfolio-card__title">Alimerka</p>
+                    <p class="portfolio-card__type" data-i18n="card.elementia.type">Web · E-commerce</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="portfolio-item" data-type="app">
+                <a href="https://play.google.com/store/apps/details?id=com.it.weguest.weguestapp" target="_blank" rel="noopener noreferrer" class="portfolio-card">
+                  <img src="assets/img/portfolio/portfolio-3.jpg" alt="Weguest App" loading="lazy" decoding="async" width="400" height="300">
+                  <div class="portfolio-card__info">
+                    <p class="portfolio-card__title">Weguest</p>
+                    <p class="portfolio-card__type" data-i18n="card.weguest.type">App · Android</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="portfolio-item" data-type="web">
+                <a href="https://www.elementia.com/inicio" target="_blank" rel="noopener noreferrer" class="portfolio-card">
+                  <img src="assets/img/portfolio/portfolio-4.jpg" alt="Grupo Elementia" loading="lazy" decoding="async" width="400" height="300">
+                  <div class="portfolio-card__info">
+                    <p class="portfolio-card__title">Grupo Elementia</p>
+                    <p class="portfolio-card__type" data-i18n="card.corp.type">Web · Corporativo</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="portfolio-item" data-type="web">
+                <a href="https://www.d4-0.com/" target="_blank" rel="noopener noreferrer" class="portfolio-card">
+                  <img src="assets/img/portfolio/portfolio-6.jpg" alt="DAISA / D4" loading="lazy" decoding="async" width="400" height="300">
+                  <div class="portfolio-card__info">
+                    <p class="portfolio-card__title" data-i18n="card.d4.title">DAISA / D4</p>
+                    <p class="portfolio-card__type" data-i18n="card.d4.type">Web · Corporativo</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="portfolio-item" data-type="app">
+                <a href="https://play.google.com/store/apps/details?id=com.cajaingenieros.android.bancamovil" target="_blank" rel="noopener noreferrer" class="portfolio-card">
+                  <img src="assets/img/portfolio/portfolio-9.jpg" alt="Caja de Ingenieros Banca Móvil" loading="lazy" decoding="async" width="400" height="300">
+                  <div class="portfolio-card__info">
+                    <p class="portfolio-card__title" data-i18n="card.bizum.title">Banca Móvil — Caja de Ingenieros</p>
+                    <p class="portfolio-card__type" data-i18n="card.bizum.type">App · Fintech · Bizum</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="portfolio-item" data-type="web">
+                <a href="https://b2e-spain.arcelormittal.com/asturias/portal-empleado/B2EWeb/srv/B2EXM600" target="_blank" rel="noopener noreferrer" class="portfolio-card">
+                  <img src="assets/img/portfolio/portfolio-10.jpg" alt="ArcelorMittal Portal Empleado" loading="lazy" decoding="async" width="400" height="300">
+                  <div class="portfolio-card__info">
+                    <p class="portfolio-card__title" data-i18n="card.arcelor.title">ArcelorMittal — Portal Empleado</p>
+                    <p class="portfolio-card__type" data-i18n="card.arcelor.type">Web · Intranet</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="portfolio-item" data-type="web">
+                <a href="https://www.axa-assistance-segurodeviaje.es/" target="_blank" rel="noopener noreferrer" class="portfolio-card">
+                  <img src="assets/img/portfolio/portfolio-11.jpg" alt="AXA Seguro de Viaje" loading="lazy" decoding="async" width="400" height="300">
+                  <div class="portfolio-card__info">
+                    <p class="portfolio-card__title" data-i18n="card.axa.title">AXA Seguro de Viaje</p>
+                    <p class="portfolio-card__type" data-i18n="card.axa.type">Web · Insurance</p>
+                  </div>
+                </a>
+              </li>
+
+            </ul>
+          </div><!-- /portfolio-wrap -->
+        </div>
+      </section>
+
+      <!-- ── CONTACTO ── -->
+      <section id="contacto" class="section" aria-labelledby="contacto-heading">
+        <div class="section__inner">
+          <header class="section__header">
+            <h2 id="contacto-heading" class="section__title" data-i18n="contact.title">Contacto</h2>
+            <p class="section__subtitle" data-i18n="contact.subtitle">¿Hablamos? Estoy abierto a nuevas oportunidades.</p>
+          </header>
+
+          <address class="contact">
+            <a href="mailto:juanmafdezcuesta@gmail.com" class="contact__item">
+              <span class="contact__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+              </span>
+              <span>
+                <strong data-i18n="contact.email.label">Email</strong>
+                juanmafdezcuesta@gmail.com
+              </span>
+            </a>
+            <a href="tel:+34628464515" class="contact__item">
+              <span class="contact__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.23h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.06 6.06l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </span>
+              <span>
+                <strong data-i18n="contact.phone.label">Teléfono</strong>
+                628 464 515
+              </span>
+            </a>
+            <a href="https://www.linkedin.com/in/juanmafcuesta/" target="_blank" rel="noopener noreferrer" class="contact__item">
+              <span class="contact__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </span>
+              <span>
+                <strong data-i18n="contact.linkedin.label">LinkedIn</strong>
+                /in/juanmafcuesta
+              </span>
+            </a>
+          </address>
+
+        </div>
+      </section>
+
+    </main><!-- /main -->
+
+  </div><!-- /layout -->
+
+  <footer class="footer" role="contentinfo">
+    <p data-i18n="footer.text">© 2026 Juan Manuel Fernández Cuesta · Construido con HTML semántico, CSS moderno y cero dependencias.</p>
+  </footer>
+
+  <a href="#inicio" class="back-to-top" id="backToTop" aria-label="Volver al inicio" data-i18n-label="btt.label">
+    <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </a>
+
+  <script>
+    'use strict';
+
+    const root    = document.documentElement;
+    const themeBtn = document.getElementById('themeToggle');
+    const toggle  = document.getElementById('mobileNavToggle');
+    const sidebar = document.getElementById('sidebar');
+
+    // ── Translations ──────────────────────────────────────────────
+    const TRANSLATIONS = {
+      es: {
+        'skip.link':          'Saltar al contenido principal',
+        'nav.main.label':     'Navegación principal',
+        'social.label':       'Redes sociales',
+        'hero.tags.label':    'Áreas de especialización',
+        'btt.label':          'Volver al inicio',
+        'mobile.open':        'Abrir menú de navegación',
+        'mobile.close':       'Cerrar menú',
+        'theme.todark':       'Cambiar a tema oscuro',
+        'theme.tolight':      'Cambiar a tema claro',
+
+        'nav.inicio':         'Inicio',
+        'nav.sobremi':        'Sobre mí',
+        'nav.habilidades':    'Habilidades',
+        'nav.experiencia':    'Experiencia',
+        'nav.portfolio':      'Portfolio',
+        'nav.contacto':       'Contacto',
+
+        'hero.eyebrow':       'Senior Frontend Developer · 14 años de experiencia',
+        'hero.heading':       'Hola, soy<br><span class="hero__name">Juanma</span>',
+        'hero.tagline':       'Construyo interfaces web <strong>seguras</strong>, <strong>accesibles</strong> y de <strong>alto rendimiento</strong>. Especializado en Angular, React, TypeScript y Liferay — con foco en AI-Driven Development.',
+        'hero.cta.exp':       'Ver experiencia',
+        'hero.cta.linkedin':  'LinkedIn',
+        'hero.tag.security':  'Frontend Security',
+        'hero.tag.cwv':       'Core Web Vitals',
+        'hero.tag.wcag':      'WCAG 2.2',
+        'hero.tag.ai':        'AI-Driven Dev',
+
+        'about.title':        'Sobre mí',
+        'about.bio.1':        'Desarrollador Frontend con 14 años de experiencia construyendo interfaces web <strong>seguras, de alto rendimiento y accesibles</strong>. Especializado en arquitecturas con Angular, React, TypeScript y Liferay Headless.',
+        'about.bio.2':        'Apasionado por la intersección entre Developer Experience y seguridad desde el primer render: minificación, ofuscación, hardening. Impulso la eficiencia del ciclo de vida del software con <strong>AI-Driven Development</strong> (Claude Code, GitHub Copilot) para acelerar auditorías, detectar riesgos y refactorizar lógica compleja.',
+        'about.loc.label':    'Ubicación',
+        'about.email.label':  'Email',
+        'about.phone.label':  'Teléfono',
+        'about.lang.label':   'Idiomas',
+        'about.lang.value':   'Español · Inglés (Full Professional) · Gallego',
+        'about.certs.title':  'Certificaciones',
+
+        'skills.title':       'Habilidades técnicas',
+        'skills.subtitle':    'Stack actual y áreas de especialización — sin barras de progreso arbitrarias',
+        'sg.core':            'Core',
+        'sg.frameworks':      'Frameworks & Plataformas',
+        'sg.css':             'CSS Architecture',
+        'sg.quality':         'Calidad & Rendimiento',
+        'sg.ai':              'AI & Developer Experience',
+        'sg.tooling':         'Tooling',
+        'tag.html5':          'HTML5 semántico',
+        'tag.css-modern':     'CSS moderno',
+        'tag.css-nesting':    'CSS Nesting nativo',
+        'tag.fluid-type':     'Tipografía fluida',
+
+        'exp.title':          'Experiencia profesional',
+        'exp.badge.current':  'Actual',
+        'exp.more':           'Más responsabilidades',
+        'exp.view':           'Ver responsabilidades',
+
+        'job.hiberus.period': '<time datetime="2025-11">Nov 2025</time> – Presente · <span class="job__location">Provincia de Asturias</span>',
+        'job.hiberus.h1':     'Optimización del ciclo de vida del software con <strong>Claude Code</strong> y GitHub Copilot para lógica compleja y refactorización estratégica.',
+        'job.hiberus.h2':     'Soluciones desacopladas con <strong>Liferay Headless APIs</strong> y arquitecturas modernas de Client Extensions.',
+        'job.hiberus.d1':     'Diseño y despliegue de Fragments dinámicos y Liferay Objects para maximizar la flexibilidad y escalabilidad de plataformas corporativas.',
+        'job.hiberus.d2':     'AI-Driven Development: integración de herramientas de IA en el flujo de desarrollo para acelerar auditorías y detección de riesgos.',
+
+        'job.izertis.period': '<time datetime="2022-01">Ene 2022</time> – <time datetime="2025-11">Nov 2025</time> · 3 años 11 meses · <span class="job__location">Gijón, Asturias</span>',
+        'job.izertis.h1':     'Liderazgo técnico en evaluación de tareas críticas, asegurando calidad y alineación con objetivos del cliente.',
+        'job.izertis.h2':     'Creación y mantenimiento de librerías de componentes con <strong>Storybook</strong>, BEM y SCSS.',
+        'job.izertis.d1':     'Construcción de Client Extensions en Angular y React para optimizar la comunicación con servicios backend.',
+        'job.izertis.d2':     'Integración de librerías: GSAP, Swiper, OwlCarousel, Leaflet, DataTables.',
+        'job.izertis.d3':     'Clientes destacados: Telecable, EDP Redes, Gobierno de Asturias.',
+
+        'job.ricoh.period':   '<time datetime="2021-05">May 2021</time> – <time datetime="2022-01">Ene 2022</time> · 9 meses · <span class="job__location">Oviedo, Asturias</span>',
+        'job.ricoh.h1':       'Soluciones web para el <strong>Gobierno del Principado de Asturias</strong> siguiendo estándares institucionales de robustez.',
+        'job.ricoh.h2':       'Liderazgo en accesibilidad: normativas WCAG integradas desde la fase de diseño.',
+        'job.ricoh.d1':       'Migración de aplicaciones al nuevo framework Angular + Angular Material.',
+        'job.ricoh.d2':       'Implementación de patrones de diseño y arquitecturas de componentes reutilizables.',
+        'job.ricoh.d3':       'Consultoría técnica directa con el cliente para la validación de requisitos.',
+
+        'job.treelogic2.period': '<time datetime="2019-04">Abr 2019</time> – <time datetime="2021-04">Abr 2021</time> · 2 años · <span class="job__location">Oviedo, Asturias</span>',
+        'job.treelogic2.h1':  'Implementación y mantenimiento de la solución <strong>Bizum</strong> para Caja de Ingenieros (fintech de alta fiabilidad).',
+        'job.treelogic2.d1':  'Gestión directa con stakeholders para análisis de requerimientos y nuevas funcionalidades.',
+        'job.treelogic2.d2':  'Transformación de activos de diseño en artefactos codificados con fidelidad visual.',
+        'job.treelogic2.d3':  'Tecnologías: Angular, Angular Material.',
+
+        'job.intermark.period': '<time datetime="2016-07">Jul 2016</time> – <time datetime="2019-04">Abr 2019</time> · 2 años 10 meses · <span class="job__location">Gijón, Asturias</span>',
+        'job.intermark.d1':   'Liderazgo en recogida de requisitos y creación de prototipos interactivos.',
+        'job.intermark.d2':   'Nexo técnico entre departamentos para garantizar la alineación de equipos.',
+        'job.intermark.d3':   'QA y elaboración de manuales de usuario detallados.',
+        'job.intermark.d4':   'Tecnologías: Liferay, Angular, Bootstrap.',
+
+        'job.treelogic1.period': '<time datetime="2015-05">May 2015</time> – <time datetime="2016-06">Jun 2016</time> · 1 año 2 meses · <span class="job__location">Oviedo, Asturias</span>',
+        'job.treelogic1.d1':  'Desarrollo Frontend Liferay 6.2 con Velocity y Freemarker.',
+        'job.treelogic1.d2':  'Formación técnica interna: CSS avanzado, animaciones, 3D, Bootstrap.',
+        'job.treelogic1.d3':  'StocKeyCentral para Grifols: gestión de pedidos KARDEX con JavaFX y J2EE en entorno hospitalario.',
+        'job.treelogic1.d4':  'Automatización de flujos con Gulp.',
+
+        'job.gmv.period':     '<time datetime="2014-08">Ago 2014</time> – <time datetime="2015-05">May 2015</time> · 10 meses · <span class="job__location">Barcelona</span>',
+        'job.gmv.d1':         'Portal e intranet de la <strong>Universidad de Barcelona</strong> con Liferay y Bootstrap.',
+        'job.gmv.d2':         'unportal.cat: buscador de oferta educativa en Cataluña (Top Ten, Glosario, Google Maps, Lucene).',
+        'job.gmv.d3':         'Proyectos J2EE con Oracle, MySQL y Vaadin; infraestructura en VMWare ESXi.',
+
+        'edu.title':          'Formación académica',
+        'edu.daw.degree':     'Técnico Superior — Desarrollo de Aplicaciones Web',
+        'edu.dai.degree':     'Técnico Superior — Desarrollo de Aplicaciones Informáticas',
+
+        'portfolio.title':    'Portfolio',
+        'portfolio.subtitle': 'Proyectos destacados',
+        'pf.legend':          'Filtrar proyectos por tipo',
+        'pf.all':             'Todos',
+        'pf.web':             'Web',
+        'pf.app':             'App',
+        'card.roca.title':    'Ecosistema Digital Multimarca Global',
+        'card.roca.type':     'Web · Grupo Roca',
+        'card.izertis.title': 'IZERTIS',
+        'card.izertis.type':  'Web · Portal corporativo',
+        'card.samoa.title':   'Samoa Industrial',
+        'card.samoa.type':    'Web · E-commerce industrial',
+        'card.covid.title':   'Pasaporte COVID Asturias',
+        'card.covid.type':    'Web · Gobierno de Asturias',
+        'card.edp.title':     'EDP Mis Consumos',
+        'card.edp.type':      'Web · EDP Redes',
+        'card.telecable.title': 'Área Clientes Telecable',
+        'card.telecable.type':  'Web · Telecable',
+        'card.cofas.type':    'App · Android',
+        'card.weguest.type':  'App · Android',
+        'card.elementia.type':'Web · E-commerce',
+        'card.corp.type':     'Web · Corporativo',
+        'card.d4.title':      'DAISA / D4',
+        'card.d4.type':       'Web · Corporativo',
+        'card.bizum.title':   'Banca Móvil — Caja de Ingenieros',
+        'card.bizum.type':    'App · Fintech · Bizum',
+        'card.arcelor.title': 'ArcelorMittal — Portal Empleado',
+        'card.arcelor.type':  'Web · Intranet',
+        'card.axa.title':     'AXA Seguro de Viaje',
+        'card.axa.type':      'Web · Insurance',
+
+        'contact.title':      'Contacto',
+        'contact.subtitle':   '¿Hablamos? Estoy abierto a nuevas oportunidades.',
+        'contact.email.label':   'Email',
+        'contact.phone.label':   'Teléfono',
+        'contact.linkedin.label':'LinkedIn',
+
+        'footer.text': '© {year} Juan Manuel Fernández Cuesta · Construido con HTML semántico, CSS moderno y cero dependencias.',
+      },
+
+      en: {
+        'skip.link':          'Skip to main content',
+        'nav.main.label':     'Main navigation',
+        'social.label':       'Social media',
+        'hero.tags.label':    'Areas of expertise',
+        'btt.label':          'Back to top',
+        'mobile.open':        'Open navigation menu',
+        'mobile.close':       'Close menu',
+        'theme.todark':       'Switch to dark theme',
+        'theme.tolight':      'Switch to light theme',
+
+        'nav.inicio':         'Home',
+        'nav.sobremi':        'About',
+        'nav.habilidades':    'Skills',
+        'nav.experiencia':    'Experience',
+        'nav.portfolio':      'Portfolio',
+        'nav.contacto':       'Contact',
+
+        'hero.eyebrow':       'Senior Frontend Developer · 14 years of experience',
+        'hero.heading':       'Hi, I\'m<br><span class="hero__name">Juanma</span>',
+        'hero.tagline':       'I build <strong>secure</strong>, <strong>accessible</strong>, and <strong>high-performance</strong> web interfaces. Specialized in Angular, React, TypeScript, and Liferay — focused on AI-Driven Development.',
+        'hero.cta.exp':       'View experience',
+        'hero.cta.linkedin':  'LinkedIn',
+        'hero.tag.security':  'Frontend Security',
+        'hero.tag.cwv':       'Core Web Vitals',
+        'hero.tag.wcag':      'WCAG 2.2',
+        'hero.tag.ai':        'AI-Driven Dev',
+
+        'about.title':        'About me',
+        'about.bio.1':        'Frontend Developer with 14 years of experience building <strong>secure, high-performance, and accessible</strong> web interfaces. Specialized in architectures with Angular, React, TypeScript, and Liferay Headless.',
+        'about.bio.2':        'Passionate about the intersection of Developer Experience and security from the first render: minification, obfuscation, hardening. I drive software lifecycle efficiency with <strong>AI-Driven Development</strong> (Claude Code, GitHub Copilot) to accelerate audits, detect risks, and refactor complex logic.',
+        'about.loc.label':    'Location',
+        'about.email.label':  'Email',
+        'about.phone.label':  'Phone',
+        'about.lang.label':   'Languages',
+        'about.lang.value':   'Spanish · English (Full Professional) · Galician',
+        'about.certs.title':  'Certifications',
+
+        'skills.title':       'Technical Skills',
+        'skills.subtitle':    'Current stack and areas of expertise — no arbitrary progress bars',
+        'sg.core':            'Core',
+        'sg.frameworks':      'Frameworks & Platforms',
+        'sg.css':             'CSS Architecture',
+        'sg.quality':         'Quality & Performance',
+        'sg.ai':              'AI & Developer Experience',
+        'sg.tooling':         'Tooling',
+        'tag.html5':          'Semantic HTML5',
+        'tag.css-modern':     'Modern CSS',
+        'tag.css-nesting':    'Native CSS Nesting',
+        'tag.fluid-type':     'Fluid Typography',
+
+        'exp.title':          'Professional Experience',
+        'exp.badge.current':  'Current',
+        'exp.more':           'More responsibilities',
+        'exp.view':           'View responsibilities',
+
+        'job.hiberus.period': '<time datetime="2025-11">Nov 2025</time> – Present · <span class="job__location">Asturias Province</span>',
+        'job.hiberus.h1':     'Software lifecycle optimization with <strong>Claude Code</strong> and GitHub Copilot for complex logic and strategic refactoring.',
+        'job.hiberus.h2':     'Decoupled solutions with <strong>Liferay Headless APIs</strong> and modern Client Extensions architectures.',
+        'job.hiberus.d1':     'Design and deployment of dynamic Fragments and Liferay Objects to maximize flexibility and scalability of corporate platforms.',
+        'job.hiberus.d2':     'AI-Driven Development: integration of AI tools into the development workflow to accelerate audits and risk detection.',
+
+        'job.izertis.period': '<time datetime="2022-01">Jan 2022</time> – <time datetime="2025-11">Nov 2025</time> · 3 years 11 months · <span class="job__location">Gijón, Asturias</span>',
+        'job.izertis.h1':     'Technical leadership in critical task assessment, ensuring quality and alignment with client objectives.',
+        'job.izertis.h2':     'Creation and maintenance of component libraries with <strong>Storybook</strong>, BEM, and SCSS.',
+        'job.izertis.d1':     'Building Client Extensions in Angular and React to optimize communication with backend services.',
+        'job.izertis.d2':     'Library integrations: GSAP, Swiper, OwlCarousel, Leaflet, DataTables.',
+        'job.izertis.d3':     'Key clients: Telecable, EDP Redes, Government of Asturias.',
+
+        'job.ricoh.period':   '<time datetime="2021-05">May 2021</time> – <time datetime="2022-01">Jan 2022</time> · 9 months · <span class="job__location">Oviedo, Asturias</span>',
+        'job.ricoh.h1':       'Web solutions for the <strong>Government of the Principality of Asturias</strong> following institutional robustness standards.',
+        'job.ricoh.h2':       'Accessibility leadership: WCAG guidelines integrated from the design phase.',
+        'job.ricoh.d1':       'Application migration to the new Angular + Angular Material framework.',
+        'job.ricoh.d2':       'Implementation of design patterns and reusable component architectures.',
+        'job.ricoh.d3':       'Direct technical consulting with the client for requirements validation.',
+
+        'job.treelogic2.period': '<time datetime="2019-04">Apr 2019</time> – <time datetime="2021-04">Apr 2021</time> · 2 years · <span class="job__location">Oviedo, Asturias</span>',
+        'job.treelogic2.h1':  'Implementation and maintenance of the <strong>Bizum</strong> solution for Caja de Ingenieros (high-reliability fintech).',
+        'job.treelogic2.d1':  'Direct stakeholder management for requirements analysis and new features.',
+        'job.treelogic2.d2':  'Transformation of design assets into coded artifacts with visual fidelity.',
+        'job.treelogic2.d3':  'Technologies: Angular, Angular Material.',
+
+        'job.intermark.period': '<time datetime="2016-07">Jul 2016</time> – <time datetime="2019-04">Apr 2019</time> · 2 years 10 months · <span class="job__location">Gijón, Asturias</span>',
+        'job.intermark.d1':   'Leadership in requirements gathering and creation of interactive prototypes.',
+        'job.intermark.d2':   'Technical liaison between departments to ensure team alignment.',
+        'job.intermark.d3':   'QA and detailed user manual development.',
+        'job.intermark.d4':   'Technologies: Liferay, Angular, Bootstrap.',
+
+        'job.treelogic1.period': '<time datetime="2015-05">May 2015</time> – <time datetime="2016-06">Jun 2016</time> · 1 year 2 months · <span class="job__location">Oviedo, Asturias</span>',
+        'job.treelogic1.d1':  'Frontend Liferay 6.2 development with Velocity and Freemarker.',
+        'job.treelogic1.d2':  'Internal technical training: advanced CSS, animations, 3D, Bootstrap.',
+        'job.treelogic1.d3':  'StocKeyCentral for Grifols: KARDEX order management with JavaFX and J2EE in a hospital environment.',
+        'job.treelogic1.d4':  'Workflow automation with Gulp.',
+
+        'job.gmv.period':     '<time datetime="2014-08">Aug 2014</time> – <time datetime="2015-05">May 2015</time> · 10 months · <span class="job__location">Barcelona</span>',
+        'job.gmv.d1':         'Portal and intranet for the <strong>University of Barcelona</strong> with Liferay and Bootstrap.',
+        'job.gmv.d2':         'unportal.cat: educational offer search engine in Catalonia (Top Ten, Glossary, Google Maps, Lucene).',
+        'job.gmv.d3':         'J2EE projects with Oracle, MySQL, and Vaadin; infrastructure on VMWare ESXi.',
+
+        'edu.title':          'Education',
+        'edu.daw.degree':     'Higher Technician — Web Application Development',
+        'edu.dai.degree':     'Higher Technician — Computer Application Development',
+
+        'portfolio.title':    'Portfolio',
+        'portfolio.subtitle': 'Featured projects',
+        'pf.legend':          'Filter projects by type',
+        'pf.all':             'All',
+        'pf.web':             'Web',
+        'pf.app':             'App',
+        'card.roca.title':    'Global Multi-Brand Digital Ecosystem',
+        'card.roca.type':     'Web · Grupo Roca',
+        'card.izertis.title': 'IZERTIS',
+        'card.izertis.type':  'Web · Corporate portal',
+        'card.samoa.title':   'Samoa Industrial',
+        'card.samoa.type':    'Web · Industrial e-commerce',
+        'card.covid.title':   'COVID Passport Asturias',
+        'card.covid.type':    'Web · Government of Asturias',
+        'card.edp.title':     'EDP My Consumption',
+        'card.edp.type':      'Web · EDP Redes',
+        'card.telecable.title': 'Telecable Customer Area',
+        'card.telecable.type':  'Web · Telecable',
+        'card.cofas.type':    'App · Android',
+        'card.weguest.type':  'App · Android',
+        'card.elementia.type':'Web · E-commerce',
+        'card.corp.type':     'Web · Corporate',
+        'card.d4.title':      'DAISA / D4',
+        'card.d4.type':       'Web · Corporate',
+        'card.bizum.title':   'Mobile Banking — Caja de Ingenieros',
+        'card.bizum.type':    'App · Fintech · Bizum',
+        'card.arcelor.title': 'ArcelorMittal — Employee Portal',
+        'card.arcelor.type':  'Web · Intranet',
+        'card.axa.title':     'AXA Travel Insurance',
+        'card.axa.type':      'Web · Insurance',
+
+        'contact.title':      'Contact',
+        'contact.subtitle':   'Let\'s talk! I\'m open to new opportunities.',
+        'contact.email.label':   'Email',
+        'contact.phone.label':   'Phone',
+        'contact.linkedin.label':'LinkedIn',
+
+        'footer.text': '© {year} Juan Manuel Fernández Cuesta · Built with semantic HTML, modern CSS, and zero dependencies.',
+      }
+    };
+
+    // ── Helpers ───────────────────────────────────────────────────
+    const getT = () => TRANSLATIONS[root.getAttribute('data-lang') || 'es'] || TRANSLATIONS.es;
+
+    const applyTheme = (theme) => {
+      root.setAttribute('data-theme', theme);
+      const t = getT();
+      themeBtn.setAttribute('aria-label', theme === 'dark' ? t['theme.tolight'] : t['theme.todark']);
+    };
+
+    const applyLang = (lang) => {
+      const t = TRANSLATIONS[lang];
+      if (!t) return;
+
+      root.setAttribute('lang', lang);
+      root.setAttribute('data-lang', lang);
+
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        if (t[key] !== undefined) el.textContent = t[key].replace('{year}', new Date().getFullYear());
+      });
+
+      document.querySelectorAll('[data-i18n-html]').forEach(el => {
+        const key = el.dataset.i18nHtml;
+        if (t[key] !== undefined) el.innerHTML = t[key];
+      });
+
+      document.querySelectorAll('[data-i18n-label]').forEach(el => {
+        const key = el.dataset.i18nLabel;
+        if (t[key] !== undefined) el.setAttribute('aria-label', t[key]);
+      });
+
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        const active = btn.dataset.langTarget === lang;
+        btn.classList.toggle('lang-btn--active', active);
+        btn.setAttribute('aria-pressed', String(active));
+      });
+
+      const isDark = root.getAttribute('data-theme') === 'dark';
+      themeBtn.setAttribute('aria-label', isDark ? t['theme.tolight'] : t['theme.todark']);
+
+      const isOpen = sidebar.classList.contains('sidebar--open');
+      toggle.setAttribute('aria-label', isOpen ? t['mobile.close'] : t['mobile.open']);
+
+      try { localStorage.setItem('lang', lang); } catch {}
+    };
+
+    // ── Mobile nav ────────────────────────────────────────────────
+    toggle.addEventListener('click', () => {
+      const isOpen = sidebar.classList.toggle('sidebar--open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+      toggle.setAttribute('aria-label', isOpen ? getT()['mobile.close'] : getT()['mobile.open']);
+      document.body.toggleAttribute('data-nav-open', isOpen);
+    });
+
+    sidebar.querySelectorAll('.nav__link').forEach(link => {
+      link.addEventListener('click', () => {
+        sidebar.classList.remove('sidebar--open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', getT()['mobile.open']);
+        document.body.removeAttribute('data-nav-open');
+      });
+    });
+
+    // ── Language buttons ──────────────────────────────────────────
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => applyLang(btn.dataset.langTarget));
+    });
+
+    // ── Active nav (IntersectionObserver) ─────────────────────────
+    const sections  = document.querySelectorAll('section[id]');
+    const navLinks  = document.querySelectorAll('.nav__link');
+
+    const navObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        navLinks.forEach(l => l.removeAttribute('aria-current'));
+        const active = document.querySelector(`.nav__link[href="#${entry.target.id}"]`);
+        if (active) active.setAttribute('aria-current', 'page');
+      });
+    }, { rootMargin: '-35% 0px -60% 0px' });
+
+    sections.forEach(s => navObserver.observe(s));
+
+    // ── Back to top ───────────────────────────────────────────────
+    const btt = document.getElementById('backToTop');
+    new IntersectionObserver(([entry]) => {
+      btt.classList.toggle('back-to-top--visible', !entry.isIntersecting);
+    }, { rootMargin: '0px 0px -90% 0px' }).observe(document.getElementById('inicio'));
+
+    // ── Theme toggle with View Transitions API ─────────────────────
+    themeBtn.addEventListener('click', () => {
+      const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      try { localStorage.setItem('theme', next); } catch {}
+      if (!document.startViewTransition) { applyTheme(next); return; }
+      const rect = themeBtn.getBoundingClientRect();
+      root.style.setProperty('--vt-x', `${Math.round(rect.left + rect.width / 2)}px`);
+      root.style.setProperty('--vt-y', `${Math.round(rect.top + rect.height / 2)}px`);
+      document.startViewTransition(() => applyTheme(next));
+    });
+
+    // ── Init ──────────────────────────────────────────────────────
+    const storedTheme = (() => { try { return localStorage.getItem('theme'); } catch { return null; } })();
+    const systemDark  = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    applyTheme(storedTheme || (systemDark ? 'dark' : 'light'));
+
+    const storedLang = (() => { try { return localStorage.getItem('lang'); } catch { return null; } })();
+    applyLang(storedLang || 'es');
+  </script>
 
 </body>
-
 </html>
